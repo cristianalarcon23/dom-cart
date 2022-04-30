@@ -4,7 +4,6 @@ function updateSubtotal(product) {
   const price = product.querySelector('.price span').innerText;
   const quantity = product.querySelector('input').value;
   let subtotal = (price * quantity);  
-  console.log(subtotal)
   const spanSubTot = product.querySelector('.subtotal span');
   spanSubTot.innerHTML = `${subtotal.toFixed(2)}`;
   return subtotal;
@@ -22,7 +21,7 @@ const allProductsFunc = [...document.getElementsByClassName('product')];
     totalMoney += updateSubtotal(elem);
   })
   const totalShop = document.querySelector('#total-value span');
-  totalShop.innerHTML = `${totalMoney}`;
+  totalShop.innerHTML = `${totalMoney.toFixed(2)}`;
   // ITERATION 3
 }
 
