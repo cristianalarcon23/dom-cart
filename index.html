@@ -18,10 +18,10 @@
           <th>Action</th>
         </tr>
       </thead>
-      <tbody>
-        <tr class="product">
+      <tbody id="table">
+        <tr class="product" id="0">
           <td class="name">
-            <span>Ironhack Rubber Duck</span>
+            <span>Solomillo de buey Kobe a la brasa</span>
           </td>
           <td class="price">$<span>25.00</span></td>
           <td class="quantity">
@@ -29,10 +29,10 @@
           </td>
           <td class="subtotal">$<span>0</span></td>
           <td class="action">
-            <button class="btn btn-remove">Remove</button>
+            <button class="btn btn-remove" onclick="removeProduct(0)">Remove</button>
           </td>
         </tr>
-        <tr class="product">
+        <tr class="product" id="1">
           <td class="name">
             <span>Caca de la vaca Paca</span>
           </td>
@@ -42,10 +42,10 @@
           </td>
           <td class="subtotal">$<span>0</span></td>
           <td class="action">
-            <button class="btn btn-remove">Remove</button>
+            <button class="btn btn-remove" onclick="removeProduct(1)">Remove</button>
           </td>
         </tr>
-        <tr class="product">
+        <tr class="product" id = "2">
           <td class="name">
             <span>cigala fresca SM</span>
           </td>
@@ -55,25 +55,24 @@
           </td>
           <td class="subtotal">$<span>0</span></td>
           <td class="action">
-            <button class="btn btn-remove">Remove</button>
+            <button class="btn btn-remove" onclick="removeProduct(2)">Remove</button>
           </td>
         </tr>
-        <!-- Iteration 2: Add more products here -->
       </tbody>
       <tfoot>
-        <!-- <tr class="create-product">
+        <tr class="create-product">
           <td>
-            <input type="text" placeholder="Product Name" />
+            <input id ='input-pname' type="text" placeholder="Product Name" />
           </td>
           <td>
-            <input type="number" min="0" value="0" placeholder="Product Price" />
+            <input id ='input-pprice' type="number" min="0" value="0" placeholder="Product Price" />
           </td>
           <td></td>
           <td></td>
           <td>
-            <button id="create" class="btn">Create Product</button>
+            <button id="create" class="btn" onclick="createProduct()">Create Product</button>
           </td>
-        </tr> -->
+        </tr> 
       </tfoot>
     </table>
     <p class="calculate-total">
