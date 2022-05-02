@@ -41,6 +41,7 @@ function createProduct() {
   const productPrice = document.getElementById('input-pprice').value;
   const newRow = document.createElement('tr');
   newRow.id = id;
+  newRow.classList.add('product')
   newRow.innerHTML = `<td class="name">
   <span>${productName}</span>
 </td>
